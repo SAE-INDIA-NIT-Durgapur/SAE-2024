@@ -104,7 +104,7 @@ function App() {
             <h1 class="flex items-center text-4xl text-[#ff0000] font-extrabold">
               SAE IN AAROHAN
             </h1>
-            <p class="mt-5 text-base md:text-lg   ">
+            <p class="mt-5 text-base md:text-lg md:mr-10  ">
               National Institute of Technology, Durgapur has been a pioneering
               educational institute for above 50 years. It boasts of students
               who have achieved par excellence in the field of academics and
