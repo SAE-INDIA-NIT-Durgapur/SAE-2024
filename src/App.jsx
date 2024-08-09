@@ -1,47 +1,15 @@
-import { useEffect } from "react";
+
 import "./App.css";
 import { events } from "./Script";
 import { arhn_gallary } from "./Script";
 import { organizers } from "./Script";
-import { scroll, animate } from "https://cdn.skypack.dev/motion@10.13.1";
+
 
 // import "./Script.jsx";
 
 function App() {
 
-  useEffect(()=>{
-    const $cardsWrapper = document.querySelector("#cards");
-  const $cards = document.querySelectorAll(".stackCard");
-
-  const numCards = $cards.length;
-
-  $cards.forEach(($card, index0) => {
-    const index = index0 + 1;
-    const reverseIndex = numCards - index0;
-    const reverseIndex0 = numCards - index;
-
-    // Extra padding per card, so you can see the other stacked cards underneath at the top
-    $card.style.paddingTop = `calc(${index} * var(--card-top-offset))`;
-
-    // Scroll-Linked Animation
-    scroll(
-      animate($card, {
-        // Earlier cards shrink more than later cards
-        scale: [1, 1 - 0.1 * reverseIndex0], 
-      }),
-      {
-        // Each card should only shrink when it’s at the top.
-        // We can’t use exit on the els for this (as they are sticky)
-        // but can track $cardsWrapper instead.
-        target: $cardsWrapper,
-        offset: [
-          `${(index0 / numCards) * 100}%`,
-          `${(index / numCards) * 100}%`,
-        ],
-      }
-    );
-  });
-  })
+  
 
   return (
     <>
@@ -95,7 +63,7 @@ function App() {
       </div>
 
       <div className="my-20 lg:mt-0">
-        <div class="  flex max-w-full flex-col  rounded-md  lg:flex-row mx-20 my-10 lg:mx-36 lg:my-28 lg:justify-between">
+        <div class="  flex max-w-full flex-col  rounded-md  lg:flex-row mx-10 my-10 lg:mx-36 lg:my-28 lg:justify-between">
           <div class="h-full w-full lg:h-[400px] lg:w-[590px] ">
             <img
               src="https://images.pexels.com/photos/16070201/pexels-photo-16070201.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
@@ -123,7 +91,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div class="  flex max-w-full flex-col  rounded-md  lg:flex-row-reverse mx-20 my-28 lg:mx-36 lg:my-28 lg:justify-between">
+        <div class="  flex max-w-full flex-col  rounded-md  lg:flex-row-reverse mx-10 my-28 lg:mx-36 lg:my-28 lg:justify-between">
           <div class="h-full w-full lg:h-[400px] lg:w-[590px] ">
             <img
               src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
@@ -136,7 +104,7 @@ function App() {
             <h1 class="flex items-center text-4xl text-[#ff0000] font-extrabold">
               SAE IN AAROHAN
             </h1>
-            <p class="mt-5 text-lg   ">
+            <p class="mt-5 text-base md:text-lg   ">
               National Institute of Technology, Durgapur has been a pioneering
               educational institute for above 50 years. It boasts of students
               who have achieved par excellence in the field of academics and
@@ -153,27 +121,19 @@ function App() {
         </div>
       </div>
 
-      <div className="main mb-0">
-        <div className="header  text-5xl text-[#ff0000] font-extrabold">
-          <h1 className="">Our Events And Workshop In Aarohan</h1>
-        </div>
-        <ul id="cards">
-          {events.map((event) => (
-            <li key={event.id} class="md:card stackCard">
-              <div class="card__content">
-                <div>
-                  <h2 className="text-[#bec4da] font-extrabold text-4xl ">
-                    {event.name}
-                  </h2>
-                  <p className="text-lg">{event.content}</p>
-                </div>
-                <figure>
-                  <img src={event.image} alt={event.name} />
-                </figure>
-              </div>
-            </li>
-          ))}
-        </ul>
+      <div className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold">
+        <h1 className="">OUR EVENTS AND WORKSHOPS IN AAROHAN</h1>
+      </div>
+      <div className="w-full grid grid-col-1 md:grid-cols-3 px-10 md:px-32 my-10 gap-5">
+        {events.map((event) => (
+          <div class="card w-full h-[400px]">
+            <img src={event.image} alt="" className="w-full h-full" />
+            <div class="card__content">
+              <p class="card__title">{event.name}</p>
+              <p class="card__description">{event.content}</p>
+            </div>
+          </div>
+        ))}
       </div>
       <div className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold">
         <h1 className="">AAROHAN GALLERY</h1>
@@ -181,14 +141,20 @@ function App() {
       <div className="slider">
         <div className="slide-track">
           {arhn_gallary.map((arhn_img) => (
-            <div key={arhn_img.id} className="single-slide">
+            <div
+              key={arhn_img.id}
+              className="single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
+            >
               <img src={arhn_img.image} alt="arhn_gallary" />
             </div>
           ))}
         </div>
         <div className="slide-track">
           {arhn_gallary.map((arhn_img) => (
-            <div key={arhn_img.id} className="single-slide">
+            <div
+              key={arhn_img.id}
+              className="single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
+            >
               <img src={arhn_img.image} alt="arhn_gallary" />
             </div>
           ))}
