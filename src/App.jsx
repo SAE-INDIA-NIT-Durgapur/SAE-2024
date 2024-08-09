@@ -121,8 +121,10 @@ function App() {
         </div>
       </div>
 
-      <div className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold">
-        <h1 className="">OUR EVENTS AND WORKSHOPS IN AAROHAN</h1>
+      <div className=" ">
+        <h1 className="flex items-center text-4xl text-[#ff0000] font-extrabold">
+          OUR EVENTS AND WORKSHOPS IN AAROHAN
+        </h1>
       </div>
       <div className="w-full grid grid-col-1 md:grid-cols-3 px-10 md:px-32 my-10 gap-5">
         {events.map((event) => (
