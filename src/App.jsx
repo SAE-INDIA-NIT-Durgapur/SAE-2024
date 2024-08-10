@@ -145,7 +145,7 @@ function App() {
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
-      <div className="w-full grid grid-col-1 md:grid-cols-3 px-10 md:px-32 my-10 gap-5">
+      <div className="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-32 my-10 gap-5">
         {events.map((event) => (
           <div data-aos="fade-up">
             <div key={event.id} class="card w-full md:h-[400px] h-[400px]">
@@ -204,7 +204,7 @@ function App() {
           AAROHAN ORGANIZERS
         </h1>
       </div>
-      <div class="w-full px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
+      <div class="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
           <div className="rotate">
             <div key={arhn_org.id} class="arhn_org_card" data-aos="fade-up">

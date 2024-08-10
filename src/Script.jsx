@@ -3,14 +3,14 @@ import { v4 as uuidv4} from 'uuid'
 
  export const events = [
    {
-     id: 1,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 2,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
@@ -18,7 +18,7 @@ import { v4 as uuidv4} from 'uuid'
        "https://www.saenitdgp.com/static/media/3.ac2e80353f79b9dca77c.jpeg",
    },
    {
-     id: 3,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
@@ -26,7 +26,7 @@ import { v4 as uuidv4} from 'uuid'
        "https://www.saenitdgp.com/static/media/deathNote.655bbc60691bd73e1383.jpg",
    },
    {
-     id: 4,
+     id: uuidv4(),
      name: "MECHA-MARS AUCTION",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
@@ -34,7 +34,7 @@ import { v4 as uuidv4} from 'uuid'
        "https://www.saenitdgp.com/static/media/car-auction.ed6c70430ccf3ed1e988.jpg",
    },
    {
-     id: 5,
+     id: uuidv4(),
      name: "3D PRINTING WORKSHOP",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
@@ -42,42 +42,42 @@ import { v4 as uuidv4} from 'uuid'
        "https://www.saenitdgp.com/static/media/3dprinting-workshop.8e6c006bea76494adfdc.jpg",
    },
    {
-     id: 6,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 7,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 8,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 9,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 10,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
-     id: 11,
+     id: uuidv4(),
      name: "MAZEMERIZE",
      content:
        "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
@@ -164,7 +164,6 @@ import { v4 as uuidv4} from 'uuid'
    },
  ];
  
-
  export const organizers = [
    {
      id: uuidv4(),
