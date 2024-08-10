@@ -1,15 +1,22 @@
 
+import { useEffect } from "react";
 import "./App.css";
-import { events } from "./Script";
-import { arhn_gallary } from "./Script";
-import { organizers } from "./Script";
+import { events, arhn_gallary, organizers } from "./Script";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
-// import "./Script.jsx";
+
 
 function App() {
 
-  
+  useEffect(()=>{
+    AOS.init({
+      duration:1000,
+      delay:200,
+      
+    })
+  })
 
   return (
     <>
@@ -69,14 +76,18 @@ function App() {
               src="https://images.pexels.com/photos/16070201/pexels-photo-16070201.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
               alt="Image"
               class="h-full w-full lg:h-[400px] lg:w-[590px] rounded-md object-center"
+              data-aos="fade-right"
             />
           </div>
 
           <div class="lg:w-[600px]  mt-10 lg:mt-0 lg:ml-24">
-            <h1 class="flex items-center text-4xl text-[#ff0000] font-extrabold">
+            <h1
+              class="flex items-center text-4xl text-[#ff0000] font-extrabold"
+              data-aos="fade-right"
+            >
               ABOUT AAROHAN
             </h1>
-            <p class="mt-5 md:text-lg  text-base ">
+            <p class="mt-5 md:text-lg  text-base " data-aos="fade-up-left">
               National Institute of Technology, Durgapur has been a pioneering
               educational institute for above 50 years. It boasts of students
               who have achieved par excellence in the field of academics and
@@ -97,14 +108,21 @@ function App() {
               src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load"
               alt="Image"
               class="h-full w-full lg:h-[400px] lg:w-[590px] rounded-md object-center"
+              data-aos="fade-left"
             />
           </div>
 
           <div class="lg:w-[600px]  mt-10 lg:mt-0 ">
-            <h1 class="flex items-center text-4xl text-[#ff0000] font-extrabold">
+            <h1
+              class="flex items-center text-4xl text-[#ff0000] font-extrabold"
+              data-aos="fade-left"
+            >
               SAE IN AAROHAN
             </h1>
-            <p class="mt-5 text-base md:text-lg md:mr-10  ">
+            <p
+              class="mt-5 text-base md:text-lg md:mr-10 "
+              data-aos="fade-up-right"
+            >
               National Institute of Technology, Durgapur has been a pioneering
               educational institute for above 50 years. It boasts of students
               who have achieved par excellence in the field of academics and
@@ -121,23 +139,30 @@ function App() {
         </div>
       </div>
 
-      <div className=" ">
-        <h1 className="flex items-center text-4xl text-[#ff0000] font-extrabold">
+      <div data-aos="fade-right">
+        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
       <div className="w-full grid grid-col-1 md:grid-cols-3 px-10 md:px-32 my-10 gap-5">
         {events.map((event) => (
-          <div class="card w-full h-[400px]">
-            <img src={event.image} alt="" className="w-full h-full" />
-            <div class="card__content">
-              <p class="card__title">{event.name}</p>
-              <p class="card__description">{event.content}</p>
+          <div data-aos="fade-up">
+            <div key={event.id} class="card w-full md:h-[400px] h-[400px]">
+              <img src={event.image} alt="" className="w-full h-full" />
+              <div class="card__content">
+                <h2 class="card__title text-3xl text-[#bec4da] font-bold">
+                  {event.name}
+                </h2>
+                <p class="card__description">{event.content}</p>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      <div className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold">
+      <div
+        className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
+        data-aos="fade-right"
+      >
         <h1 className="">AAROHAN GALLERY</h1>
       </div>
       <div className="slider">
@@ -162,13 +187,16 @@ function App() {
           ))}
         </div>
       </div>
-      <div className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold">
+      <div
+        className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
+        data-aos="fade-right"
+      >
         <h1 className="">AAROHAN ORGANIZERS</h1>
       </div>
       <div class="w-full px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
           <div className="rotate">
-            <div key={arhn_org.id} class="arhn_org_card">
+            <div key={arhn_org.id} class="arhn_org_card" data-aos="fade-up">
               <div class="front">
                 <img
                   src={arhn_org.organizer_img}
