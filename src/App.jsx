@@ -23,7 +23,8 @@ function App() {
       <div class=" w-full  myCarousel">
         <div
           id="carouselExampleFade"
-          class="carousel slide carousel-fade   rounded-lg w-full "
+          class="carousel slide carousel-fade   w-full "
+          data-bs-ride="carousel"
         >
           <div class="carousel-inner">
             <div class="carousel-item active md:h-[700px]">
@@ -159,11 +160,16 @@ function App() {
           </div>
         ))}
       </div>
-      <div
+      {/* <div
         className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
         data-aos="fade-right"
       >
         <h1 className="">AAROHAN GALLERY</h1>
+      </div> */}
+      <div data-aos="fade-right">
+        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
+          AAROHAN GALLERY
+        </h1>
       </div>
       <div className="slider">
         <div className="slide-track">
@@ -187,11 +193,16 @@ function App() {
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
         data-aos="fade-right"
       >
         <h1 className="">AAROHAN ORGANIZERS</h1>
+      </div> */}
+      <div data-aos="fade-right">
+        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
+          AAROHAN ORGANIZERS
+        </h1>
       </div>
       <div class="w-full px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
