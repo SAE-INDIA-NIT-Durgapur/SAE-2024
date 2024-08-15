@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div class=" w-full  myCarousel">
+      <div class=" w-full  myCarousel ">
         <div
           id="carouselExampleFade"
           class="carousel slide carousel-fade   w-full "
@@ -29,21 +29,21 @@ function App() {
           <div class="carousel-inner">
             <div class="carousel-item active md:h-[700px]">
               <img
-                src="https://www.saenitdgp.com/static/media/arhn7.968ac25a7e273c7ce5d4.jpg"
+                src="https://images.pexels.com/photos/27627211/pexels-photo-27627211/free-photo-of-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100 c-img"
                 alt="..."
               />
             </div>
             <div class="carousel-item md:h-[700px]">
               <img
-                src="https://www.saenitdgp.com/static/media/arhn11.1f8159d7fa04a4d7a037.jpg"
+                src="https://images.pexels.com/photos/27684846/pexels-photo-27684846/free-photo-of-the-view-from-the-top-of-a-mountain-range-with-mountains-in-the-distance.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100 c-img"
                 alt="..."
               />
             </div>
             <div class="carousel-item md:h-[700px]">
               <img
-                src="https://www.saenitdgp.com/static/media/akb.0c06ac78ae18ac08e4a7.JPG"
+                src="https://images.pexels.com/photos/27373043/pexels-photo-27373043/free-photo-of-maiden-tower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="d-block w-100 c-img"
                 alt="..."
               />
@@ -70,7 +70,7 @@ function App() {
         </div>
       </div>
 
-      <div className="my-20 lg:mt-0">
+      <div className="w-full my-20 lg:mt-0 overflow-hidden">
         <div class="  flex max-w-full flex-col  rounded-md  lg:flex-row mx-10 my-10 lg:mx-36 lg:my-28 lg:justify-between">
           <div class="h-full w-full lg:h-[400px] lg:w-[590px] ">
             <img
@@ -149,7 +149,11 @@ function App() {
         {events.map((event) => (
           <div data-aos="fade-up">
             <div key={event.id} class="card w-full md:h-[400px] h-[400px]">
-              <img src={event.image} alt="" className="w-full h-full" />
+              <img
+                src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                className="w-full h-full"
+              />
               <div class="card__content">
                 <h2 class="card__title text-3xl text-[#bec4da] font-bold">
                   {event.name}
@@ -178,7 +182,10 @@ function App() {
               key={arhn_img.id}
               className="single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
             >
-              <img src={arhn_img.image} alt="arhn_gallary" />
+              <img
+                src="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="arhn_gallary"
+              />
             </div>
           ))}
         </div>
@@ -188,7 +195,10 @@ function App() {
               key={arhn_img.id}
               className="single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
             >
-              <img src={arhn_img.image} alt="arhn_gallary" />
+              <img
+                src="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="arhn_gallary"
+              />
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=poppin:wght@400;500&display=swap");
 
 body{
   margin: 0;
@@ -8,6 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   /* background-color: #151719; */
+  overflow-x: hidden;
 }
 
 
@@ -43,7 +44,7 @@ line-height: 62px;
 p{
   line-height: 27px;
   /* font-size: 1.2rem; */
-  font-family: Lato, sans-serif;
+  font-family: poppin, sans-serif;
   color: #9ca9b3;
   letter-spacing: -0.1px;
   
