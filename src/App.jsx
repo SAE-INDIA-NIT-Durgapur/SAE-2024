@@ -155,7 +155,7 @@ function App() {
                 <h2 className="text-2xl lg:text-3xl text-[#bec4da] font-bold">
                   {event.name}
                 </h2>
-                <p className="arhn-card-description text-sm lg:text-lg">{event.content}</p>
+                <p className="arhn-card-description text-base lg:text-lg">{event.content}</p>
               </div>
             </div>
           </div>
