@@ -7,17 +7,12 @@ body{
   display: block;
   justify-content: center;
   align-items: center;
-  /* background-color: #151719; */
+  background-color: #151719;
   overflow-x: hidden;
 }
 
 
-/* .c-item {
-  height: 730px;
-  border-top: 50px;
-} */
-
-.c-img{
+.arhn-c-img{
   height: 100%;
   width: 100%;
   /* border: 50px; */
@@ -25,14 +20,6 @@ body{
   /* filter: brightness(0.6); */
 }
 
-/* .myCarousel {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  border: 20px;
-} */
 
 .about-arhn-heading{
   color: #ff0000;
@@ -43,22 +30,22 @@ line-height: 62px;
 
 p{
   line-height: 27px;
-  /* font-size: 1.2rem; */
   font-family: poppin, sans-serif;
   color: #9ca9b3;
   letter-spacing: -0.1px;
   
 }
 
-/* stack card */
+/* Event arhn-card */
 
 
-.card {
+.arhn-card {
   position: relative;
   /* width: 400px; */
   /* height: 450px; */
   /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
   border-radius: 10px;
+  border:1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,18 +54,18 @@ p{
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.card img {
+.arhn-card img {
   width: 100%;
-  object-fit: center;
+  object-fit:fill;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.card:hover {
+.arhn-card:hover {
   transform: rotate(-5deg) scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card__content {
+.arhn-card-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,35 +80,24 @@ p{
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.card:hover .card__content {
+.arhn-card:hover .arhn-card-content {
   transform: translate(-50%, -50%) rotate(0deg);
   opacity: 1;
 }
 
 
-
-/* .card__title {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-  font-weight: 700;
-} */
-
-.card__description {
+.arhn-card-description {
   margin: 20px 0 0;
   font-size: 18px;
   color: #777;
   line-height: 1.4;
 }
 
-/* .card:hover svg {
-  scale: 0;
-  transform: rotate(-45deg);
-} */
+
 
 /* AAROHAN GALLERY */
 
-.slider{
+.arhn-slider{
   height: 400px;
   margin: 50px auto;
   position: relative;
@@ -132,12 +108,12 @@ p{
   
 }
 
-.slide-track{
+.arhn-slide-track{
   display: flex;
   /* width: calc(250px * 30); */
   animation: scroll 30s linear infinite;
 }
-.slider:hover .slide-track{
+.arhn-slider:hover .arhn-slide-track{
   animation-play-state: paused;
 }
 
@@ -150,7 +126,7 @@ p{
   }
 }
 
-.single-slide{
+.arhn-single-slide{
   /* height: 200px; */
   /* width: 400px; */
   display: flex;
@@ -160,18 +136,18 @@ p{
   border-radius: 10px;
 }
 
-.single-slide img{
+.arhn-single-slide img{
   width: 100%;
   transition: transform 1s;
   border-radius: 10px;
 }
-.single-slide img:hover{
+.arhn-single-slide img:hover{
   transform: translateZ(20px);
   
 }
 
-.slider::before,
-.slider::after{
+.arhn-slider::before,
+.arhn-slider::after{
   background: linear-gradient(to right, #151719 0%, rgba(255,255,255,0) 100%);
   content: '';
   height: 100%;
@@ -180,12 +156,12 @@ p{
   z-index: 2;
 }
 
-.slider::before{
+.arhn-slider::before{
   left: 0;
   top: 0;
 }
 
-.slider::after{
+.arhn-slider::after{
   right: 0;
   top: 0;
   transform: rotate(180deg);
@@ -195,7 +171,7 @@ p{
 /* AAROHAN ORAGNIZER */
 
 
-.rotate,.arhn_org_card,.arhn_org_card img
+.arhn-rotate,.arhn_org_card,.arhn_org_card img
  {
   height: 300px;
   width: 250px;
@@ -206,13 +182,13 @@ p{
   border-radius: 2rem;
 }
 
-.rotate:hover{
+.arhn-rotate:hover{
   cursor: pointer;
   transform: rotateY(180deg) rotateZ(180deg);
 }
 
-.front,
-.back {
+.arhn-front,
+.arhn-back {
   height: 300px;
   width: 250px;
   border-radius: 2rem;
@@ -223,8 +199,8 @@ p{
   background: #000407;
 }
 
-.front,
-.back {
+.arhn-front,
+.arhn-back {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -232,11 +208,11 @@ p{
   gap: 20px;
 }
 
-.back {
+.arhn-back {
   transform: rotateY(180deg) rotateZ(180deg);
 }
 
-.back-heading
+.arhn-back-heading
  {
   font-size: 28px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

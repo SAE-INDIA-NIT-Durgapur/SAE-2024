@@ -4,83 +4,55 @@ import { v4 as uuidv4} from 'uuid'
  export const events = [
    {
      id: uuidv4(),
-     name: "MAZEMERIZE",
+     name: "BIDWIT",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "BidWit blended the thrill of an auction with the challenge of a trivia game. Teams bid on trivia questions, with each bid setting the question's value. The winning team earned points by correctly answering the questions, and the team with the highest score emerged victorious, making for an exciting and competitive event.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
      id: uuidv4(),
-     name: "MAZEMERIZE",
+     name: "ELECTRA",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "In Crossword participants from diverse backgrounds united to tackle thrilling challenges, intricate puzzles, and stimulating quizzes, showcasing their puzzle-solving skills. Running throughout AAROHAN, it was a dynamic experience filled with adrenaline-pumping puzzles and mind-bending riddles that tested wit and quick thinking at every turn.",
      image:
        "https://www.saenitdgp.com/static/media/3.ac2e80353f79b9dca77c.jpeg",
    },
    {
      id: uuidv4(),
-     name: "MAZEMERIZE",
+     name: "DEATH NOTE",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "Death Note is a engaging event where a crime was committed, and a multitude of suspects and pieces of evidence were gathered. Interrogations followed, revealing layers of deceit and truth. The challenge lies in unraveling the mystery by piecing together the puzzle. Will anyone channel their inner Sherlock to uncover the killer's identity and motive and crack the case?",
      image:
        "https://www.saenitdgp.com/static/media/deathNote.655bbc60691bd73e1383.jpg",
    },
    {
      id: uuidv4(),
-     name: "MECHA-MARS AUCTION",
+     name: "FLYING UAV",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "In Flying UAV, participants are trained to build and operate unmanned aerial vehicles (UAVs), transforming dreams of flight into reality. With hands-on experience, we explore the boundless possibilities of innovation, taking to the skies and pushing the limits of what's achievable with cutting-edge technology.",
      image:
        "https://www.saenitdgp.com/static/media/car-auction.ed6c70430ccf3ed1e988.jpg",
    },
    {
      id: uuidv4(),
-     name: "3D PRINTING WORKSHOP",
+     name: "DATA SCIENCE WITH RASPBERRY PI",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "The workshop seamlessly blended data science with Raspberry Pi's capabilities, guided by experts. Participants mastered data collection, processing, and analysis using Python, exploring IoT and environmental applications. They emerged with valuable skills for impactful, data-driven projects, suitable for all experience levels.",
      image:
        "https://www.saenitdgp.com/static/media/3dprinting-workshop.8e6c006bea76494adfdc.jpg",
    },
    {
      id: uuidv4(),
-     name: "MAZEMERIZE",
+     name: "CAR AUCTION",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "In the Car Auction, teams used their budget to bid on premium car and supercar parts, strategically assembling the ultimate vehicle. They evaluated each component’s performance and value, aiming to build a powerhouse machine and secure a winning edge.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
    {
      id: uuidv4(),
-     name: "MAZEMERIZE",
+     name: "ROBOLIGA",
      content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
-   },
-   {
-     id: uuidv4(),
-     name: "MAZEMERIZE",
-     content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
-   },
-   {
-     id: uuidv4(),
-     name: "MAZEMERIZE",
-     content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
-   },
-   {
-     id: uuidv4(),
-     name: "MAZEMERIZE",
-     content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
-   },
-   {
-     id: uuidv4(),
-     name: "MAZEMERIZE",
-     content:
-       "This is a thrilling online maze game with twists and turns in every corner, it takes a keen eye and quick thinking to navigate your way to victory.",
+       "Roboliga, an innovative event by Team AAVISHKAR, featured thrilling one-on-one football matches against intelligent bots, blending football with advanced technology. It showcased participants' leadership and technical skills, creating a spirited atmosphere of competition and teamwork. The event’s success highlighted the club’s commitment to delivering exceptional and memorable experiences.",
      image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
    },
  ];
