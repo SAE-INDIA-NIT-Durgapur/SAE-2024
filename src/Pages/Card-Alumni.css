@@ -11,7 +11,6 @@
     z-index: 2;
     filter: brightness(0.8);
 
-
   }
 .card-alumni img{
   position: absolute;
@@ -45,23 +44,62 @@
                     -5px 5px 20px black;
     }
   }
-  
-  .bottom h2{
+  .bottom-Alumni{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* column-gap: 7vw; */
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+  }
+  .items-Alumni{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2vh;
+  }
+  .card-alumni h2{
     z-index: 2;
     display: flex;
     color: white;
     font-family: "Poppins", sans-serif;
+    margin-left: 12vw;
+    margin-top: 26vh;
+    text-wrap: wrap;
+    transform: scale(0);
+
   }
-  
-  .icons{
+  .card-alumni:hover h2{
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+  }
+  @media screen and (max-width: 1198px){
+    .card-alumni h2{
+      margin-left: 18vw;
+      margin-top: 21vh;
+    }
+  }
+
+  .icons-Alumni{
     display: flex;
-    justify-content: space-around;
-    font-size: 2vw;
+    justify-content: space-evenly;
+    font-size: 2em;
     color: black;
     background:transparent;
     z-index: 2;
-    margin-top: 1vh;
-    
+    column-gap: 4vw;
+    margin-bottom: 3vh;
+    margin-left: 2vw;
+  }
+  @media screen and (max-width: 945px){
+    .card-alumni h2{
+      margin-left: 25vw;
+      margin-top: 21vh;
+    }
+    .icons-Alumni{
+      column-gap: 9vw;
+    }
   }
   .delay1{
     transform: scale(0);
@@ -105,28 +143,6 @@
     transition: transform 0.5s ease-in-out;
   }
 
-  .bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    column-gap: 7vw;
-    height: 30%;
-    position: absolute;
-    bottom: 0;
-    h2{
-      transform: scale(0);
-    }
-  }
-  /* .card-alumni:hover .bottom h2{
-    background: transparent;
-    backdrop-filter: blur(20px);
-    animation: animates 0.2s linear;
-  } */
-  .card-alumni:hover .bottom h2{
-    transform: scale(1);
-    transition: transform 0.5s ease-in-out;
-  }
   @keyframes animates{
     0%{
       height: 0;
@@ -145,12 +161,13 @@
     transition: all 0.5s ease;
     width: 30px;
     display: flex;
-    mix-blend-mode: hard-light;
+    opacity: 70%;
+    /* mix-blend-mode: hard-light; */
   
   }
 
   .card-alumni:hover button{
-    transform: scale(16.5);
+    transform: scale(14.5);
     mix-blend-mode: hard-light;
   }
   
@@ -160,7 +177,7 @@
       height: 43vh;
       width: 30vw;
     }
-    .icons{
+    .icons-Alumni{
       font-size: 2rem;
     }
     .h2{
@@ -169,6 +186,7 @@
     .card-alumni:hover button{
       transform: scale(16.5);
     }
+    
   }
   @media screen and (max-width: 940px){
     .card-alumni{

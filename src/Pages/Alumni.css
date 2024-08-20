@@ -1,4 +1,4 @@
-.container{
+.container-alumni{
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -21,7 +21,7 @@
     color: rgb(255,0,0);
   }
 }
-.content{
+.content-alumni{
   color: white;
   z-index: 100;
   width: 80vw;
@@ -33,6 +33,7 @@
     text-wrap: wrap;
     position: relative;
     animation: animate 1s linear;
+    font-size: 1.2em;
   }
 }
 @keyframes animate{
@@ -46,20 +47,24 @@
   }
 }
 
-.cards{
+.cards-Alumni{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   column-gap: 2vw;
   row-gap: 8vh;
   width: 80vw;
+  
 }
 
-.cards:last-child{
+.cards-Alumni:last-child{
   margin-bottom: 5vh;
 }
 @media screen and (max-width: 1180px){
-  .container{
+  .container-alumni{
     row-gap: 0vh;
+  }
+  .content-alumni{
+    padding-top: 2vh;
   }
 }
