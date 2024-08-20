@@ -8,9 +8,15 @@ const Card = (props) => {
   return (
     <div className="card-alumni">
         <div className="icons">
-            <FontAwesomeIcon className="delay1" icon={faFacebook} />
-            <FontAwesomeIcon className="delay2" icon={faInstagram} />
-            <FontAwesomeIcon className="delay3" icon={faGithub} />
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon className="delay1" icon={faFacebook} color='black' />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon className="delay2" icon={faInstagram} color='black'/>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon className="delay3" icon={faGithub} color='black'/>
+            </a>
         </div>
         <img src={props.image} alt="" />
         <div className="bottom">

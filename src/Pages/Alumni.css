@@ -21,6 +21,31 @@
     color: rgb(255,0,0);
   }
 }
+.content{
+  color: white;
+  z-index: 100;
+  width: 80vw;
+  padding: 2px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+
+  p{
+    text-wrap: wrap;
+    position: relative;
+    animation: animate 1s linear;
+  }
+}
+@keyframes animate{
+  0%{
+    left:-10vw;
+    opacity: 0%;
+  }
+  100%{
+    left:0vw;
+    opacity: 100%;
+  }
+}
+
 .cards{
   display: flex;
   flex-wrap: wrap;

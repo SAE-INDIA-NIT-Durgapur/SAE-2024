@@ -32,7 +32,7 @@ const Wave = () => {
           <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(148, 24, 24,0.3)" />
           <use xlinkHref="#gentle-wave" x="48" y="9" fill="rgba(148, 24, 24,0.3)" />
           <use xlinkHref="#gentle-wave" x="48" y="12" fill="rgba(148, 24, 24,0.3)" />
-          <use xlinkHref="#gentle-wave" x="48" y="10" fill="rgb(21,23,26---)" />
+          <use xlinkHref="#gentle-wave" x="48" y="10" fill="rgb(21,23,26)" />
         </g>
       </svg>
     </div>
