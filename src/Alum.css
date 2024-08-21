@@ -1,8 +1,8 @@
 /* From Uiverse.io by vinodjangid07 */
 .card {
   position: relative;
-  /* width: 300px;
-  height: 300px; */
+  width: 250px;
+  height: 245px;
   background: #15171A;
   border-radius: 30px;
   overflow: hidden;
@@ -11,6 +11,12 @@
   /* border: 2px solid #bec4da; */
 }
 
+@media (min-width: 768px) {
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+}
 .background {
   position: absolute;
   inset: 0;
