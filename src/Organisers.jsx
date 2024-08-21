@@ -9,7 +9,7 @@ const Organisers = () => {
     <div className=" w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-32 my-10 gap-5 ">
       {organizers.map((organiser, index) => (
         /* From Uiverse.io by vinodjangid07 */
-        <div class="card justify-self-center">
+        <div className="org-card justify-self-center">
           <div class="background  w-full h-full">
             <img
               className="w-full h-full   org-img"
