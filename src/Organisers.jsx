@@ -10,9 +10,9 @@ const Organisers = () => {
       {organizers.map((organiser, index) => (
         /* From Uiverse.io by vinodjangid07 */
         <div class="card w-[245px] h-[250px] md:w-[300px] md:h-[300px] justify-self-center">
-          <div class="background object-cover">
+          <div class="background object-cover w-full h-full">
             <img
-              className="w-full h-full object-cover  org-img"
+              className="w-full h-full   org-img"
               src={organiser.url}
               alt=""
             />
