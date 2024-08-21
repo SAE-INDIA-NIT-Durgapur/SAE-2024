@@ -1,9 +1,8 @@
 import React from 'react'
 import './Alumni.css'
-import Card from './Card.js'
+import Cardalumni from './Cardalumni.js'
 import Wave from './Wave.js';
 import './Wave.css';
-// import author  from '../Images/author.jpeg';
 const Alumni = () => {
     const cardsData = [
         {
@@ -226,7 +225,7 @@ const Alumni = () => {
             </div>
             <div className="cards-Alumni">
             {cardsData.map(card => (
-                <Card  name={card.name} image={card.image} instalink={card.instalink} facebooklink={card.facebooklink} linkedinlink={card.linkedinlink}/>
+                <Cardalumni  name={card.name} image={card.image} instalink={card.instalink} facebooklink={card.facebooklink} linkedinlink={card.linkedinlink}/>
             ))}
             </div>
         </div>

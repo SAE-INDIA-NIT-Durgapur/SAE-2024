@@ -10,32 +10,15 @@
     top: 0;
   }
   
-  .waves-alumni {
+.waves-alumni {
     position: absolute;
     width: 100%;
     height: 20vh;
     min-height: 100px;
   }
-.wave-container2{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgb(21,23,26);
-    overflow: hidden;
-    z-index: 1;
-    top: 100%;
-  }
-.waves2 {
-    position: absolute;
-    top: 70%;
-    width: 100%;
-    height: 30vh;
-    min-height: 100px;
-  }
+
   @media screen and (max-width: 1180px){
-    .wave-container2{
-      display: none;
-    }
+
     .waves-alumni{
       height: 12vh;
     }

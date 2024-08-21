@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import Alumni from './Alumni';
-const Card = (props) => {
+const Cardalumni = (props) => {
   return (
     <div className="card-alumni">
         <img src={props.image} alt="" />
@@ -31,4 +30,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default Cardalumni;
