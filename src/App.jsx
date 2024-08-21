@@ -1,9 +1,10 @@
-
 import { useEffect } from "react";
 import "./App.css";
 import { events, arhn_gallary, organizers } from "./Script";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import "./Organisers.jsx"
+import Organisers from "./Organisers.jsx";
 
 
 
@@ -20,11 +21,13 @@ function App() {
 
   return (
     <>
-      <div className=" w-full  myCarousel ">
+      <div className=" w-full  ">
         <div
           id="carouselExampleFade"
           className="carousel slide carousel-fade   w-full "
           data-bs-ride="carousel"
+          data-bs-interval="2000"
+          data-bs-pause="false"
         >
           <div className="carousel-inner">
             <div className="carousel-item active md:h-[700px]">
@@ -55,7 +58,10 @@ function App() {
             data-bs-target="#carouselExampleFade"
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Previous</span>
           </button>
           <button
@@ -64,7 +70,10 @@ function App() {
             data-bs-target="#carouselExampleFade"
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
@@ -83,7 +92,7 @@ function App() {
 
           <div className="lg:w-[600px]  mt-10 lg:mt-0 lg:ml-24">
             <h1
-              className="flex items-center text-4xl text-[#ff0000] font-extrabold"
+              className="flex items-center text-4xl text-[#FF0000] font-extrabold"
               data-aos="fade-right"
             >
               ABOUT AAROHAN
@@ -138,14 +147,17 @@ function App() {
       </div>
 
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
+        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold underline">
           OUR EVENTS AND WORKSHOPS IN AAROHAN
         </h1>
       </div>
       <div className="w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 px-10 lg:px-32 my-10 gap-5">
         {events.map((event) => (
           <div data-aos="fade-up">
-            <div key={event.id} className="arhn-card w-full md:h-[400px] h-[400px]">
+            <div
+              key={event.id}
+              className="arhn-card w-full md:h-[400px] h-[400px]"
+            >
               <img
                 src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
@@ -155,7 +167,9 @@ function App() {
                 <h2 className="text-2xl lg:text-3xl text-[#bec4da] font-bold">
                   {event.name}
                 </h2>
-                <p className="arhn-card-description text-base lg:text-lg">{event.content}</p>
+                <p className="arhn-card-description text-base lg:text-lg">
+                  {event.content}
+                </p>
               </div>
             </div>
           </div>
@@ -168,7 +182,7 @@ function App() {
         <h1 className="">AAROHAN GALLERY</h1>
       </div> */}
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
+        <h1 className="py-24 pb-12 text-center text-5xl text-[#ff0000] font-extrabold underline">
           AAROHAN GALLERY
         </h1>
       </div>
@@ -207,11 +221,13 @@ function App() {
         <h1 className="">AAROHAN ORGANIZERS</h1>
       </div> */}
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-5xl text-[#ff0000] font-extrabold">
+        <h1 className="py-24 text-center text-5xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
         </h1>
       </div>
-      <div className="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
+
+      <Organisers />
+      {/* <div className="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
           <div className="arhn-rotate">
             <div key={arhn_org.id} className="arhn_org_card" data-aos="fade-up">
@@ -228,7 +244,7 @@ function App() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
