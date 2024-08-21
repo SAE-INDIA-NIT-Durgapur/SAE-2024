@@ -64,10 +64,11 @@
     display: flex;
     color: white;
     font-family: "Poppins", sans-serif;
-    margin-left: 12vw;
+    margin-left: 10vw;
     margin-top: 26vh;
     text-wrap: wrap;
     transform: scale(0);
+    font-size: 1.3em;
 
   }
   .card-alumni:hover h2{
@@ -76,9 +77,10 @@
   }
   @media screen and (max-width: 1198px){
     .card-alumni h2{
-      margin-left: 18vw;
+      margin-left: 15vw;
       margin-top: 21vh;
-    }
+      font-size: 1em;
+        }
   }
 
   .icons-Alumni{

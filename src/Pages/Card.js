@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Alumni from './Alumni';
+// import Alumni from './Alumni';
 const Card = (props) => {
   return (
     <div className="card-alumni">
@@ -13,13 +13,13 @@ const Card = (props) => {
         <div className="bottom-Alumni">
             <div className="items-Alumni">
               <div className="icons-Alumni">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href={props.facebooklink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="delay1" icon={faFacebook} color='white' />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href={props.instalink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="delay2" icon={faInstagram} color='white'/>
                 </a>
-                <a href="https://Linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href={props.linkedinlink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="delay3" icon={faLinkedin} color='white'/>
                 </a>
               </div>
@@ -31,4 +31,4 @@ const Card = (props) => {
   );
 };
 
-export default Card-Alumni;
+export default Card;
