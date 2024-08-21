@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import "./App.css";
-import { events, arhn_gallary, organizers } from "./Script";
+import { events, arhn_gallary} from "./Script";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import "./Organisers.jsx"
-import Organisers from "./Organisers.jsx";
+import Organisers2 from "./Organisers2.jsx";
+
 
 
 
@@ -32,21 +33,21 @@ function App() {
           <div className="carousel-inner">
             <div className="carousel-item active md:h-[700px]">
               <img
-                src="https://images.pexels.com/photos/27627211/pexels-photo-27627211/free-photo-of-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
             </div>
             <div className="carousel-item md:h-[700px]">
               <img
-                src="https://images.pexels.com/photos/27684846/pexels-photo-27684846/free-photo-of-the-view-from-the-top-of-a-mountain-range-with-mountains-in-the-distance.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="\assets\arhn7.jpg"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
             </div>
             <div className="carousel-item md:h-[700px]">
               <img
-                src="https://images.pexels.com/photos/27373043/pexels-photo-27373043/free-photo-of-maiden-tower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="\assets\arhn11.jpg"
                 className="d-block w-100 arhn-c-img"
                 alt="..."
               />
@@ -156,13 +157,9 @@ function App() {
           <div data-aos="fade-up">
             <div
               key={event.id}
-              className="arhn-card w-full md:h-[400px] h-[400px]"
+              className="arhn-card w-full md:h-[400px] h-[350px]"
             >
-              <img
-                src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-                className="w-full h-full"
-              />
+              <img src={event.image} alt="" className="w-full h-full" />
               <div className="arhn-card-content">
                 <h2 className="text-2xl lg:text-3xl text-[#bec4da] font-bold">
                   {event.name}
@@ -173,14 +170,10 @@ function App() {
               </div>
             </div>
           </div>
+
         ))}
       </div>
-      {/* <div
-        className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
-        data-aos="fade-right"
-      >
-        <h1 className="">AAROHAN GALLERY</h1>
-      </div> */}
+     
       <div data-aos="fade-right">
         <h1 className="py-24 pb-12 text-center text-5xl text-[#ff0000] font-extrabold underline">
           AAROHAN GALLERY
@@ -193,10 +186,7 @@ function App() {
               key={arhn_img.id}
               className="arhn-single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
             >
-              <img
-                src="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="arhn_gallary"
-              />
+              <img src={arhn_img.image} alt="arhn_gallary" />
             </div>
           ))}
         </div>
@@ -207,7 +197,7 @@ function App() {
               className="arhn-single-slide w-[300px] h-[150px] md:w-[400px] md:h-[200px]"
             >
               <img
-                src="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={arhn_img.image}
                 alt="arhn_gallary"
               />
             </div>
@@ -226,7 +216,7 @@ function App() {
         </h1>
       </div>
 
-      <Organisers />
+      <Organisers2 />
       {/* <div className="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
           <div className="arhn-rotate">

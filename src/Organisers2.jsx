@@ -19,10 +19,10 @@ const Organisers2 = () => {
         <div class="arhn-org-card justify-self-center" data-aos="fade-up">
           <img
             className="org-img w-full h-full"
-            src={organiser.organizer_img}
+            src={organiser.url}
             alt=""
           />
-          <span className="text-2xl">{organiser.organizer_name}</span>
+          <span className="text-2xl">{organiser.name}</span>
         </div>
       ))}
     </div>

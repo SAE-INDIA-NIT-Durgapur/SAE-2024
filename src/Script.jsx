@@ -7,76 +7,69 @@ import { v4 as uuidv4} from 'uuid'
      name: "BIDWIT",
      content:
        "BidWit blended the thrill of an auction with the challenge of a trivia game. Teams bid on trivia questions, with each bid setting the question's value. The winning team earned points by correctly answering the questions, and the team with the highest score emerged victorious, making for an exciting and competitive event.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
+     image: "/assets/argnBidwit.jpg",
    },
    {
      id: uuidv4(),
      name: "ELECTRA",
      content:
        "In Crossword participants from diverse backgrounds united to tackle thrilling challenges, intricate puzzles, and stimulating quizzes, showcasing their puzzle-solving skills. Running throughout AAROHAN, it was a dynamic experience filled with adrenaline-pumping puzzles and mind-bending riddles that tested wit and quick thinking at every turn.",
-     image:
-       "https://www.saenitdgp.com/static/media/3.ac2e80353f79b9dca77c.jpeg",
+     image: "/assets/arhnElectra.jpg",
    },
    {
      id: uuidv4(),
      name: "DEATH NOTE",
      content:
        "Death Note is a engaging event where a crime was committed, and a multitude of suspects and pieces of evidence were gathered. Interrogations followed, revealing layers of deceit and truth. The challenge lies in unraveling the mystery by piecing together the puzzle. Will anyone channel their inner Sherlock to uncover the killer's identity and motive and crack the case?",
-     image:
-       "https://www.saenitdgp.com/static/media/deathNote.655bbc60691bd73e1383.jpg",
+     image: "/assets/arhnDeathNote.jpg",
    },
    {
      id: uuidv4(),
      name: "FLYING UAV",
      content:
        "In Flying UAV, participants are trained to build and operate unmanned aerial vehicles (UAVs), transforming dreams of flight into reality. With hands-on experience, we explore the boundless possibilities of innovation, taking to the skies and pushing the limits of what's achievable with cutting-edge technology.",
-     image:
-       "https://www.saenitdgp.com/static/media/car-auction.ed6c70430ccf3ed1e988.jpg",
+     image: "/assets/arhnFlying.jpg",
    },
    {
      id: uuidv4(),
      name: "DATA SCIENCE WITH RASPBERRY PI",
      content:
        "The workshop seamlessly blended data science with Raspberry Pi's capabilities, guided by experts. Participants mastered data collection, processing, and analysis using Python, exploring IoT and environmental applications. They emerged with valuable skills for impactful, data-driven projects, suitable for all experience levels.",
-     image:
-       "https://www.saenitdgp.com/static/media/3dprinting-workshop.8e6c006bea76494adfdc.jpg",
+     image: "/assets/ArhnWorkshop.jpg",
    },
    {
      id: uuidv4(),
      name: "CAR AUCTION",
      content:
        "In the Car Auction, teams used their budget to bid on premium car and supercar parts, strategically assembling the ultimate vehicle. They evaluated each component’s performance and value, aiming to build a powerhouse machine and secure a winning edge.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
+     image: "/assets/arhnCarAuction.jpg",
    },
    {
      id: uuidv4(),
      name: "ROBOLIGA",
      content:
        "Roboliga, an innovative event by Team AAVISHKAR, featured thrilling one-on-one football matches against intelligent bots, blending football with advanced technology. It showcased participants' leadership and technical skills, creating a spirited atmosphere of competition and teamwork. The event’s success highlighted the club’s commitment to delivering exceptional and memorable experiences.",
-     image: "https://www.saenitdgp.com/static/media/1.c670f534ffa8af3172d8.png",
+     image: "/assets/arhnRoboliga.jpg",
    },
  ];
 
  export const arhn_gallary = [
    {
-     id: uuidv4(), 
+     id: uuidv4(),
      image:
-       "https://www.saenitdgp.com/static/media/cc.dce7f81274a0e8d5225e.JPG",
+       "/assets/74256AE8-4932-4B9D-8F60-A571B7DF2963.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/ff.bd6c180e3d48b071f920.JPG",
+     image: "/assets/arhn3.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn6.92b2f1d3ab803671554b.jpg",
+     image: "/assets/arhn4.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/akb.0c06ac78ae18ac08e4a7.JPG",
+     image: "/assets/arhn5.jpg",
    },
    {
      id: uuidv4(),
@@ -85,54 +78,44 @@ import { v4 as uuidv4} from 'uuid'
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn7.968ac25a7e273c7ce5d4.jpg",
+     image: "/assets/arhn8.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn6.92b2f1d3ab803671554b.jpg",
+     image: "/assets/arhn7.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn3.5b99e9e1d209fb9ceaf4.jpg",
+     image: "/assets/arhn10.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn8.74c391e23759a4ae481e.jpg",
+     image: "/assets/arhn6.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/dd.75755b8869f68297cc29.JPG",
+     image: "/assets/arhn11.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn4.fde9bbf8631da21634aa.jpg",
+     image: "/assets/IMG_4717.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn10.4e330f7d9ef7cff4e6f6.jpg",
+     image: "/assets/IMG_4552.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/ee.9ba85359adbb62a6ca6a.JPG",
+     image: "assets/IMG_20240408_200738.jpg",
    },
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn11.1f8159d7fa04a4d7a037.jpg",
+     image: "/assets/IMG_4746.jpg",
    },
-   
+
    {
      id: uuidv4(),
-     image:
-       "https://www.saenitdgp.com/static/media/arhn5.62226bb4a458a73ded1e.jpg",
+     image: "/assets/IMG_4764.jpg",
    },
  ];
  

@@ -39,24 +39,25 @@ p{
 /* Event arhn-card */
 
 
+/* Base styles */
 .arhn-card {
   position: relative;
   /* width: 400px; */
   /* height: 450px; */
   /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
   border-radius: 10px;
-  border:1px solid white;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  
+
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .arhn-card img {
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -92,7 +93,6 @@ p{
   color: #777;
   line-height: 1.4;
 }
-
 
 
 /* AAROHAN GALLERY */
@@ -142,7 +142,7 @@ p{
   border-radius: 10px;
 }
 .arhn-single-slide img:hover{
-  transform: translateZ(20px);
+  transform: translateZ(10px);
   
 }
 
