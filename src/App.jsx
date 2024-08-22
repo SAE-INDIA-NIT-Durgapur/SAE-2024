@@ -164,7 +164,7 @@ function App() {
                 <h2 className="text-2xl lg:text-3xl text-[#bec4da] font-bold">
                   {event.name}
                 </h2>
-                <p className="arhn-card-description text-base lg:text-lg">
+                <p className="arhn-card-description text-sm lg:text-lg">
                   {event.content}
                 </p>
               </div>
@@ -204,12 +204,7 @@ function App() {
           ))}
         </div>
       </div>
-      {/* <div
-        className=" w-full py-20 pb-10 text-center  text-5xl text-[#ff0000] font-extrabold"
-        data-aos="fade-right"
-      >
-        <h1 className="">AAROHAN ORGANIZERS</h1>
-      </div> */}
+      
       <div data-aos="fade-right">
         <h1 className="py-24 text-center text-5xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
