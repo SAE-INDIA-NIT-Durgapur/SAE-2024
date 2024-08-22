@@ -133,7 +133,7 @@ const Alumni = () => {
         },
         {
             image:"https://live.staticflickr.com/65535/52768599596_ca63fa83dd.jpg" ,
-            name:"Souham Bnaerjee",
+            name:"Souham Banerjee",
             instalink:"https://instagram.com/souhambanerjee?igshid=YmMyMTA2M2Y=",
             linkedinlink:"https://www.linkedin.com/in/souham-banerjee-a407b5185/",
             facebooklink:"/"
