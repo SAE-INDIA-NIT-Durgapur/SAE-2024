@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./Alum2.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import (useEffect)
 import { organizers } from "./Script";
 
 const Organisers2 = () => {
