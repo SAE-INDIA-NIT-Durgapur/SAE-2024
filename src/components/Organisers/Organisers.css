@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: 'Arial', sans-serif; /* Ensures consistency across devices */
+  font-family: 'Arial', sans-serif;
 }
 
 .organisers-container {
@@ -12,30 +12,31 @@ body {
   gap: 20px;
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto; /* Center the grid */
-  padding: 20px 10px; /* Add padding for better spacing */
-  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin: 0 auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .image-card {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  height: 370px; /* Fixed height to maintain uniformity */
   position: relative;
-  transition: transform 0.4s ease-in; /* Reduced transition time for better UX */
+  transition: transform 0.4s ease-in;
   overflow: hidden;
-  border: 4px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px; /* Adds a slight border-radius for a more modern look */
+  border-radius: 8px;
 }
 
 .image-card img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center; /* Centers the image for better focus */
-  transition: transform 0.4s ease-in; /* Synchronize with the hover effect */
+  object-fit: cover; /* Ensure images cover the card uniformly */
+  object-position: top; /* Display the top part of the image */
+  transition: transform 0.4s ease-in;
+  border-radius: 10px;
 }
 
 .image-card img:hover {
@@ -51,38 +52,41 @@ body {
   left: 0;
   content: attr(data-name);
   transform: translateY(100%);
-  font-size: 20px; /* Slightly reduced font size for better readability */
+  font-size: 20px;
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text contrast */
+  padding-top: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: transform 0.4s ease-in;
-  border: 4px solid white;
+  transition: transform 0.9s ease-in;
   box-sizing: border-box;
 }
 
 .image-card:hover::before,
 .image-card:hover::after {
-  transform: translateY(0%);
+  transform: translateY(70%);
+}
+
+.last-card {
+  justify-self: center;
 }
 
 @media only screen and (max-width: 1050px) {
   .organisers-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px; /* Adjust gap for smaller screens */
+    gap: 15px;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .organisers-container {
     grid-template-columns: 1fr;
-    gap: 10px; /* Adjust gap for smaller screens */
+    gap: 10px;
   }
 
   .image-card:before,
   .image-card:after {
-    font-size: 18px; /* Further reduce font size for very small screens */
+    font-size: 18px;
   }
 }

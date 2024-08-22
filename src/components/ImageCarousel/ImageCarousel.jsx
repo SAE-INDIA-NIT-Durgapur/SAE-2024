@@ -3,27 +3,27 @@ import React, { useEffect, useRef } from 'react';
 const images = [
   {
     id: 1,
-    url: 'https://live.staticflickr.com/65535/52769190048_b589abcc80_c.jpg',
+    url: 'https://i.ibb.co/pnbMVyP/Screenshot-2024-08-22-095823.png',
   },
   {
     id: 2,
-    url: 'https://live.staticflickr.com/65535/52770039962_72bc8e3de0_z.jpg',
+    url: 'https://i.ibb.co/ySCDbNC/Screenshot-2024-08-22-095908.png',
   },
   {
     id: 3,
-    url: 'https://live.staticflickr.com/65535/52771023680_9c71d6edfa.jpg',
+    url: 'https://i.ibb.co/LPJNw6t/Screenshot-2024-08-22-100019.png',
   },
   {
     id: 4,
-    url: 'https://live.staticflickr.com/65535/52768957679_875b7065c1_c.jpg',
+    url: 'https://i.ibb.co/hHhmGZx/Screenshot-2024-08-22-095724.png',
   },
   {
     id: 5,
-    url: 'https://live.staticflickr.com/65535/52770988935_63073728a2_z.jpg',
+    url: 'https://i.ibb.co/Z2sSXr6/Screenshot-2024-08-22-095218.png',
   },
   {
     id: 6,
-    url: 'https://live.staticflickr.com/65535/52780953624_a6fafa6621_w.jpg',
+    url: 'https://i.ibb.co/b1WQZDp/Screenshot-2024-08-22-100959.png',
   },
   {
     id: 7,
@@ -31,11 +31,27 @@ const images = [
   },
   {
     id: 8,
-    url: 'https://live.staticflickr.com/65535/52770053252_c8911f0b4e_z.jpg',
+    url: 'https://i.ibb.co/R2PLhXY/Screenshot-2024-08-22-100914.png',
   },
   {
     id: 9,
-    url: 'https://live.staticflickr.com/65535/52780703426_e3eaa82d0e_w.jpg',
+    url: 'https://i.ibb.co/gSy7yxR/Screenshot-2024-08-22-095423.png',
+  },
+  {
+    id: 10,
+    url: 'https://i.ibb.co/J7BmrG2/Screenshot-2024-08-22-102225.png',
+  },
+  {
+    id: 11,
+    url: 'https://i.ibb.co/h15nqbQ/Screenshot-2024-08-22-102215.png',
+  },
+  {
+    id: 12,
+    url: 'https://i.ibb.co/JFkQGNF/Screenshot-2024-08-22-102008.png',
+  },
+  {
+    id: 13,
+    url: 'https://i.ibb.co/0r7cgnh/Screenshot-2024-08-22-102824.png',
   },
 ];
 

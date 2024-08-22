@@ -1,51 +1,51 @@
 import React from 'react';
-import './Speakers.css'; 
+import './Speakers.css';
 
 const speakers = [
   {
-    name: 'SomeOne Famous',
-    role: 'Director',
-    imgSrc: 'https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Prachi Tehlan',
+    role: 'Actress, Style icon and Ngo Founder',
+    imgSrc: "https://pbs.twimg.com/profile_images/1194550946161774592/NubSAY2v_400x400.jpg"
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Producer',
-    imgSrc: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Ashutosh Pratihast',
+    role: ' Founder and CEO',
+    imgSrc: 'https://i.scdn.co/image/ab6761610000e5eb69ba8288e3eced2ff14b1060'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Actor',
-    imgSrc: 'https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Sinjini Sengupta',
+    role: 'Actuary, Author, Columnist and Professional Speaker',
+    imgSrc: 'https://pbs.twimg.com/profile_images/1679449056601583616/YcJrRpwC_400x400.jpg'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Director',
-    imgSrc: 'https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Dr. Yogendra Singh Rathore',
+    role: 'NLP expert, Mental health coach',
+    imgSrc: 'https://images.mid-day.com/images/images/2022/sep/NLP1_e.jpg'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Producer',
-    imgSrc: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Aanchal Thakur',
+    role: 'Alpine Skier',
+    imgSrc: 'https://i.postimg.cc/VvrMRpWQ/Screenshot-2024-08-22-021218.png'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Actor',
-    imgSrc: 'https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Tapan Misra',
+    role: 'Indian Scientist',
+    imgSrc: 'https://i.postimg.cc/fWG8VQsh/Screenshot-2024-08-22-021637.png'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Director',
-    imgSrc: 'https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Kanthi Dutt',
+    role: 'Entrepreneur',
+    imgSrc: 'https://i.postimg.cc/htPTj2XB/Screenshot-2024-08-22-021844.png'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Producer',
-    imgSrc: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Pratik Gauri',
+    role: 'Social Entrepreneur',
+    imgSrc: 'https://i.postimg.cc/vHG6q0LV/Screenshot-2024-08-22-022121.png'
   },
   {
-    name: 'SomeOne Famous',
-    role: 'Actor',
-    imgSrc: 'https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+    name: 'Kenidra Woods',
+    role: 'Mental Health Advocate/Social Justice Activist',
+    imgSrc: 'https://i.postimg.cc/DwMJznVr/Screenshot-2024-08-22-022326.png'
   },
 ];
 
@@ -58,7 +58,7 @@ const Speakers = () => {
             <div className="imgBx">
               <img src={speaker.imgSrc} alt={speaker.name} />
             </div>
-            <div className="details">
+            <div className="details text-xl font-extrabold">
               <h2>{speaker.name}<br /><span>{speaker.role}</span></h2>
             </div>
           </div>
