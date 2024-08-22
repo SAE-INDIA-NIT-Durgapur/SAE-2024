@@ -1,0 +1,357 @@
+body {
+    background-color: rgb(21, 23, 26);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.teams-page {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.teams-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(202, 52, 53);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.section-divider {
+    width: 80%;
+    margin: 0 auto 2rem;
+    border: 1px solid rgb(202, 52, 53);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 4rem;
+    margin: 0 2rem;
+    padding-bottom: 3rem;
+    padding: 2rem 4rem;
+    grid-column-gap: 0;
+}
+
+.grid-item {
+    perspective: 1000px;
+}
+
+.card {
+    background-color: rgb(30, 32, 34);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(216, 211, 211, 0.4);
+    transform: translateY(0);
+    transition: transform 0.9s ease-in-out;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    animation: scrollAnimation 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05) rotateX(4deg) translateY(-7px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+.card-content {
+    padding: 0.75rem;
+    text-align: center;
+    position: relative;
+    flex-grow: 0;
+}
+
+.card-name {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    color: rgb(202, 52, 53);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.card-designation {
+    font-size: 0.75rem;
+    color: rgb(202, 52, 53);
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+    animation: scrollAnimation 1s ease-in-out;
+}
+
+.card-overlay h3,
+.card-overlay p {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.card-overlay p.position {
+    color: rgb(202, 52, 53);
+    transition: color 0.2s ease-in-out;
+}
+
+.card:hover .card-overlay p.position {
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.social-icon {
+    color: rgb(202, 52, 53);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scrollAnimation {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section.animate-left {
+    animation: animate-left 1.5s ease-out forwards;
+}
+
+.section.animate-right {
+    animation: animate-right 1.5s ease-out forwards;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .teams-heading {
+        font-size: 2.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .teams-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        max-width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .teams-heading {
+        font-size: 1.75rem;
+    }
+
+    .sub-heading {
+        font-size: 1.25rem;
+    }
+
+    .card {
+        max-width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    .teams-heading {
+        font-size: 1.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    .card {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .card-name,
+    .card-designation {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .teams-heading {
+        font-size: 1.25rem;
+    }
+
+    .sub-heading {
+        font-size: 0.875rem;
+    }
+
+    .card {
+        max-width: 130px;
+        height: 130px;
+    }
+
+    .card-name,
+    .card-designation {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .teams-heading {
+        font-size: 1rem;
+    }
+
+    .sub-heading {
+        font-size: 0.75rem;
+    }
+
+    .card {
+        max-width: 110px;
+        height: 110px;
+    }
+
+    .card-name,
+    .card-designation {
+        font-size: 0.5rem;
+    }
+}
