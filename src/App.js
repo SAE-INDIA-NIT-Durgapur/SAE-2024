@@ -1,4 +1,4 @@
-import TeamsPage from "./Components/teamspage"; // Capitalized the component name
+import TeamsPage from "./components/teamspage"; // Capitalized the component name
 import './App.css';
 
 function App() {

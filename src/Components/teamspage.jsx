@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./teamsPage.css";
-import { finalYear } from "../Assets/finalYear";
+import { finalYear } from "../Assets/finalYear.js";
 import { thirdYear } from "../Assets/thirdYear.js";
 import { secondYear } from "../Assets/secondYear.js";
 

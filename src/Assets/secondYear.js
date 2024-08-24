@@ -14,7 +14,7 @@ export const secondYear = [
         "linkedinLink":"https://www.linkedin.com/in/abdus-sayeed-087671308",
     },
     {
-        "url":require('../Assets/2ndYearImg/Akshit Kumar Jha.jpg'),
+        "url":require('../Assets/2ndYearImg/Akshit Kumar Jha.png'),
         "name":"Akshit Kumar Jha",
         "position":"Junior Coordinator",
         "instaLink":"https://www.instagram.com/_amansingh1007_?r=nametag",

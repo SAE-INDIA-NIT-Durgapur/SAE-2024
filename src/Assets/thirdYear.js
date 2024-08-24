@@ -126,7 +126,7 @@ export const thirdYear = [
         "linkedinLink":"https://www.linkedin.com/in/pothina-divya-venkata-durga-naga-sai-45610625a",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52968093126_6fe4180e5d_w.jpg",
+        "url":require("../Assets/3rdYearImg/Raman Patel.png"),
         "name":"Raman Patel",
         "position":"Senior Coordinator",
         "instaLink":"",
@@ -154,14 +154,14 @@ export const thirdYear = [
         "linkedinLink":"https://www.linkedin.com/in/samaseen-prabhat-b90909262",
     },
     {
-        "url":"https://live.staticflickr.com/65535/53126903891_f475cba476_t.jpg",
+        "url":require("../Assets/3rdYearImg/Sarvapalli Arya.png"),
         "name":"Sarvpalli Arya",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/shivangi_._queen?igshid=NGExMmI2YTkyZg==",
         "linkedinLink":"https://www.linkedin.com/in/sarvpalli-arya-0034a9261",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52965149827_e51079d940_n.jpg",
+        "url":require("./3rdYearImg/Soumya Raj.png"),
         "name":"Soumya Raj",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/_sxumyaa?igshid=MzNlNGNkZWQ4Mg==",
@@ -238,7 +238,7 @@ export const thirdYear = [
         "linkedinLink":"",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52965743741_903e64a3ed_w.jpg",
+        "url":require("../Assets/3rdYearImg/Uday Bhaskar.png"),
         "name":"Uday Bhaskar",
         "position":"Senior Coordinator",
         "instaLink":"",
