@@ -18,13 +18,13 @@
 .fade {
   opacity: 1;
 }
-/* Add this to your CSS file */
+
 
 .underline-red {
   text-decoration: underline;
-  text-decoration-color: #fff; /* Red underline */
-  text-decoration-thickness: 5px; /* Adjust thickness */
-  text-underline-offset: 8px; /* Add space between the text and the underline */
+  text-decoration-color: #fff;
+  text-decoration-thickness: 5px; 
+  text-underline-offset: 8px; 
 }
 
 

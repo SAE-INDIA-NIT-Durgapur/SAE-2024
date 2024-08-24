@@ -23,7 +23,7 @@ const HeaderImg = () => {
       progress();
       setTimeout(schedule, 4000); 
     };
-    const timeoutId = setTimeout(schedule, 500); // Initial delay before the first 
+    const timeoutId = setTimeout(schedule, 500); 
 
     return () => clearTimeout(timeoutId); 
   }, []);
@@ -33,7 +33,7 @@ const HeaderImg = () => {
   };
 
   return (
-    <div className="relative1">
+    <div className="ted-relative1">
       {images.map((src, index) => (
         <img
           key={index}

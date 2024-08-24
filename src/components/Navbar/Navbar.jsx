@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import './Navbar.css'; // Ensure to import the CSS file
+import './Navbar.css'; 
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // Menu starts as closed
+  const [isOpen, setIsOpen] = useState(false); 
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleNavbar = () => {
@@ -36,11 +36,11 @@ function Navbar() {
         </a>
 
         <div className="hidden md:flex space-x-8">
-          <a href="/" className="nav-link text-lg font-bold hover:text-custom-red">HOME</a>
-          <a href="/" className="nav-link text-lg font-bold hover:text-custom-red">EVENTS</a>
-          <a href="/" className="nav-link text-lg font-bold hover:text-custom-red">TEAMS</a>
-          <a href="/" className="nav-link text-lg font-bold hover:text-custom-red">TEDX</a>
-          <a href="/" className="nav-link text-lg font-bold hover:text-custom-red">AAROHAN</a>
+          <a href="/" className="ted-nav-link text-lg font-bold hover:text-custom-red">HOME</a>
+          <a href="/" className="ted-nav-link text-lg font-bold hover:text-custom-red">EVENTS</a>
+          <a href="/" className="ted-nav-link text-lg font-bold hover:text-custom-red">TEAMS</a>
+          <a href="/" className="ted-nav-link text-lg font-bold hover:text-custom-red">TEDX</a>
+          <a href="/" className="ted-nav-link text-lg font-bold hover:text-custom-red">AAROHAN</a>
         </div>
 
         <button className="md:hidden relative z-20" onClick={toggleNavbar}>

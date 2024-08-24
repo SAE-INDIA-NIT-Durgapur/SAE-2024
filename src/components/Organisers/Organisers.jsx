@@ -37,7 +37,7 @@ const Organisers = () => {
       {organisers.map((organiser, index) => (
         <div
           key={index}
-          className={`image-card font-bold text-xl justify-center  ${
+          className={`ted-image-card font-bold text-xl justify-center  ${
             index === organisers.length - 1 ? 'last-card' : ''
           }`}
           data-name={organiser.name}

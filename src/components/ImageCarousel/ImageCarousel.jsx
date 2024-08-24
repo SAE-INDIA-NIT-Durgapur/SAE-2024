@@ -76,7 +76,7 @@ const ImageItem = ({ item, index }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-fadeIn');
-          observer.unobserve(entry.target); // Stop observing once the animation is triggered
+          observer.unobserve(entry.target); 
         }
       },
       { threshold: 0.1 }

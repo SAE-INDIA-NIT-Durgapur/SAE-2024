@@ -54,11 +54,11 @@ const Speakers = () => {
     <div className="speakers-container">
       <div className="organisers-container">
         {speakers.map((speaker, index) => (
-          <div key={index} className="card">
-            <div className="imgBx">
+          <div key={index} className="ted-card">
+            <div className="ted-imgBx">
               <img src={speaker.imgSrc} alt={speaker.name} />
             </div>
-            <div className="details text-xl font-extrabold">
+            <div className="ted-details text-xl font-extrabold">
               <h2>{speaker.name}<br /><span>{speaker.role}</span></h2>
             </div>
           </div>
