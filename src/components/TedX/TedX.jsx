@@ -5,6 +5,7 @@ import Organisers from './Organisers/Organisers';
 import ImageCarousel from './ImageCarousel/ImageCarousel';
 import Navbar from './Navbar/Navbar';  
 import About from './About/About';
+import './TedX.css'
 
 const TedX = () => {
   useEffect(() => {

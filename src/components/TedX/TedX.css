@@ -1,0 +1,6 @@
+.underline-red {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 5px; 
+    text-underline-offset: 8px; 
+  }
