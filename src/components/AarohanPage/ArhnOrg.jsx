@@ -1,11 +1,11 @@
 import React from "react";
 import "./ArhnOrg.css";
-import { organizers } from "./Script";
+import { organizers } from "./ArhnData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Organisers = () => {
+const ArhnOrg = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -81,4 +81,4 @@ const Organisers = () => {
   );
 };
 
-export default Organisers;
+export default ArhnOrg;

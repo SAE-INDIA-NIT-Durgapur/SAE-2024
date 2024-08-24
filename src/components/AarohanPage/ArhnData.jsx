@@ -61,7 +61,7 @@ import { v4 as uuidv4} from 'uuid'
    },
    {
      id: uuidv4(),
-     image: "/assets/arhn3.jpg",
+     image: '/assets/arhn3.jpg',
    },
    {
      id: uuidv4(),
