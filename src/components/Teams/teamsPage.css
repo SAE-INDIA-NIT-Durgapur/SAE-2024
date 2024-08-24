@@ -116,7 +116,7 @@ body {
 
 .card:hover .card-overlay {
     opacity: 1;
-    animation: scrollAnimation 1s ease-in-out;
+    animation: scrollAnimation 0.3s ease-in-out;
 }
 
 .card-overlay h3,

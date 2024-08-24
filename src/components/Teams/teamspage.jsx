@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./teamsPage.css";
-import { finalYear } from "../Assets/finalYear.js";
-import { thirdYear } from "../Assets/thirdYear.js";
-import { secondYear } from "../Assets/secondYear.js";
+import { finalYear } from "../../Assets/finalYear.js";
+import { thirdYear } from "../../Assets/thirdYear.js";
+import { secondYear } from "../../Assets/secondYear.js";
 
 const GridLayout = ({ members }) => {
   return (
@@ -14,8 +14,15 @@ const GridLayout = ({ members }) => {
               <img className="card-image" src={member.url} alt={member.name} />
               <div className="card-overlay">
                 <h3 className="card-name">{member.name}</h3>
-                <p className="card-designation">{member.position}</p>
+                <br/>
+                <p
+                  className="card-designation"
+                  style={{ color: "rgb(202, 52, 53)" }}
+                >
+                  {member.position}
+                </p>
                 <div className="social-icons">
+                  <br/>
                   <a
                     href={member.instaLink}
                     target="_blank"
@@ -75,18 +82,21 @@ const TeamsPage = () => {
         <h2 className="sub-heading">Office Bearers</h2>
         <hr className="section-divider" />
         <GridLayout members={finalYear} />
+        <br/>
       </section>
 
       <section className="section right-to-left">
         <h2 className="sub-heading">Senior Coordinators</h2>
         <hr className="section-divider" />
         <GridLayout members={thirdYear} />
+        <br/>
       </section>
 
       <section className="section left-to-right">
         <h2 className="sub-heading">Junior Coordinators</h2>
         <hr className="section-divider" />
         <GridLayout members={secondYear} />
+        <br/>
       </section>
     </div>
   );

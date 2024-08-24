@@ -28,7 +28,8 @@ export const thirdYear = [
         "linkedinLink":"https://www.linkedin.com/in/anubhav-mondal-61b963255",
     },
     {
-        "url":require('../Assets/3rdYearImg/Chandan Kumar Roy.png'),"name":"Chandan Roy",
+        "url":require('../Assets/3rdYearImg/Chandan Kumar Roy.png'),
+        "name":"Chandan Roy",
         "position":"Senior Coordinator",
         "instaLink":"https://www.instagram.com/prash_482/",
         "linkedinLink":"https://www.linkedin.com/in/prasant-sahu-0b236923a",
@@ -70,7 +71,7 @@ export const thirdYear = [
         "linkedinLink":"",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52965744056_0ce826f321.jpg",
+        "url":require("./3rdYearImg/Mayank Mani Singh.png"),
         "name":"Mayank Mani Singh",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/singhmayankmani?igshid=ZDc4ODBmNjlmNQ==",
@@ -91,7 +92,7 @@ export const thirdYear = [
         "linkedinLink":"",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52966206828_9dc63f0c41_w.jpg",
+        "url":require("./3rdYearImg/Nisarga Jana.png"),
         "name":"Nisarga Jana",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/nj_0.0_?igshid=NGExMmI2YTkyZg==",
@@ -105,7 +106,7 @@ export const thirdYear = [
         "linkedinLink":"",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52965743931_4854f95ba7_w.jpg",
+        "url":require("./3rdYearImg/Kiranmai Perada.png"),
         "name":"Perada Kiranmai",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/__.k.i.r.a.n.m.a.i.__?igshid=NGExMmI2YTkyZg==",
@@ -175,7 +176,7 @@ export const thirdYear = [
         "linkedinLink":"https://in.linkedin.com/in/tarak-suhas-abhiram-puppala-418b25268",
     },
     {
-        "url":"https://live.staticflickr.com/65535/52965743756_9bb641a864_w.jpg",
+        "url":require("./3rdYearImg/Tanmay Bandhu Jaiswal.png"),
         "name":"Tanmay Bandhu Jaiswal",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/t.a.n.m.a.y._.j.a.i.s.w.a.l?igshid=MzNlNGNkZWQ4Mg==",
@@ -190,7 +191,7 @@ export const thirdYear = [
     },
     {
         "url":"https://live.staticflickr.com/65535/52965888629_b33d98f268_n.jpg",
-        "name":"SureshChandra Adhikari",
+        "name":"Suresh Chandra Adhikari",
         "position":"Senior Coordinator",
         "instaLink":"https://instagram.com/susmitakhatun192?igshid=MzNlNGNkZWQ4Mg==",
         "linkedinLink":"https://www.linkedin.com/in/suresh-adhikari-69b129269",

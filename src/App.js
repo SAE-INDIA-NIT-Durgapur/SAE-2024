@@ -1,10 +1,10 @@
-import TeamsPage from "./components/teamspage"; // Capitalized the component name
+import TeamsPage from "./components/Teams/teamspage"; 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <TeamsPage /> {/* Capitalized the component usage */}
+      <TeamsPage /> 
     </div>
   );
 }
