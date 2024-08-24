@@ -1,4 +1,4 @@
-import Alumni from './Components/AlumniPage/Alumni.js'
+import Alumni from './components/AlumniPage/Alumni.js'
 
 function App() {
   return (
