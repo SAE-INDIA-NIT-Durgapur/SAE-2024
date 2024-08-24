@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=poppin:wght@400;500&display=swap");
 
-body{
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -12,39 +12,39 @@ body{
 }
 
 
-.arhn-c-img{
+.arhn-c-img {
   height: 100%;
   width: 100%;
-  
+  /* border: 50px; */
   object-fit: center;
-  
+  /* filter: brightness(0.6); */
 }
 
 
-.about-arhn-heading{
+.about-arhn-heading {
   color: #ff0000;
   font-size: 30px;
-line-height: 62px;
+  line-height: 62px;
 
 }
 
-p{
+p {
   line-height: 27px;
   font-family: poppin, sans-serif;
   color: #9ca9b3;
   letter-spacing: -0.1px;
-  
+
 }
 
 /* Event arhn-card */
 
 
-/* Base styles */
+
 .arhn-card {
   position: relative;
   /* width: 400px; */
   /* height: 450px; */
-  
+
   border-radius: 10px;
   border: 1px solid white;
   display: flex;
@@ -97,38 +97,41 @@ p{
 
 /* AAROHAN GALLERY */
 
-.arhn-slider{
-  height: 400px;
+.arhn-slider {
+  height: 300px;
+  /* height: 200%; */
   margin: 50px auto;
   position: relative;
   width: 90%;
   display: flex;
   place-items: center;
   overflow: hidden;
-  
+
 }
 
-.arhn-slide-track{
+.arhn-slide-track {
   display: flex;
   /* width: calc(250px * 30); */
   animation: scroll 30s linear infinite;
 }
-.arhn-slider:hover .arhn-slide-track{
+
+.arhn-slider:hover .arhn-slide-track {
   animation-play-state: paused;
 }
 
 @keyframes scroll {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+
+  100% {
     transform: translateX(calc(-100%));
   }
 }
 
-.arhn-single-slide{
-  /* height: 200px; */
-  /* width: 400px; */
+.arhn-single-slide {
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -136,19 +139,20 @@ p{
   border-radius: 10px;
 }
 
-.arhn-single-slide img{
+.arhn-single-slide img {
   width: 100%;
+  height: 150%;
   transition: transform 1s;
   border-radius: 10px;
 }
-.arhn-single-slide img:hover{
+
+.arhn-single-slide img:hover {
   transform: translateZ(10px);
-  
 }
 
 .arhn-slider::before,
-.arhn-slider::after{
-  background: linear-gradient(to right, #15171A 0%, rgba(255,255,255,0) 100%);
+.arhn-slider::after {
+  background: linear-gradient(to right, #15171A 0%, rgba(255, 255, 255, 0) 100%);
   content: '';
   height: 100%;
   position: absolute;
@@ -156,12 +160,12 @@ p{
   z-index: 2;
 }
 
-.arhn-slider::before{
+.arhn-slider::before {
   left: 0;
   top: 0;
 }
 
-.arhn-slider::after{
+.arhn-slider::after {
   right: 0;
   top: 0;
   transform: rotate(180deg);
@@ -171,7 +175,7 @@ p{
 /* AAROHAN ORAGNIZER */
 
 
-.arhn-rotate,.arhn_org_card,.arhn_org_card img
+/* .arhn-rotate,.arhn_org_card,.arhn_org_card img
  {
   height: 300px;
   width: 250px;
@@ -217,8 +221,4 @@ p{
   font-size: 28px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-}
-
-
-
-
+} */

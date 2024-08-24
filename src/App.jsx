@@ -4,7 +4,7 @@ import { events, arhn_gallary} from "./Script";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import "./Organisers.jsx"
-import Organisers2 from "./Organisers2.jsx";
+import Organisers from "./Organisers.jsx";
 
 
 
@@ -175,7 +175,7 @@ function App() {
       </div>
      
       <div data-aos="fade-right">
-        <h1 className="py-24 pb-12 text-center text-5xl text-[#ff0000] font-extrabold underline">
+        <h1 className="py-28  pb-12 text-center text-5xl text-[#ff0000] font-extrabold underline">
           AAROHAN GALLERY
         </h1>
       </div>
@@ -206,12 +206,12 @@ function App() {
       </div>
       
       <div data-aos="fade-right">
-        <h1 className="py-24 text-center text-5xl text-[#FF0000] font-extrabold underline">
+        <h1 className="py-24 md:pb-36 text-center text-5xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
         </h1>
       </div>
 
-      <Organisers2 />
+      <Organisers />
       {/* <div className="w-full lg:px-28 flex flex-wrap mt-10 justify-center py-20 gap-5">
         {organizers.map((arhn_org) => (
           <div className="arhn-rotate">

@@ -1,5 +1,4 @@
-
-.arhn-org-card{
+.arhn-org-card {
   --bg: ;
   --hover-bg: #FFE5F4;
   --hover-text: #bec4da;
@@ -7,21 +6,21 @@
   height: 300px;
   text-align: center;
   background: var(--bg);
- 
+
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   transition: .15s cubic-bezier(.6, .4, 0, 1), transform .15s ease;
-  
+
 }
 
 
-.arhn-org-card:hover{
+.arhn-org-card:hover {
   transition: .15s cubic-bezier(.6, .4, 0, 1);
 }
 
 
-.arhn-org-card span{
+.arhn-org-card span {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -38,14 +37,14 @@
 
 .arhn-org-card:hover span {
   top: 0;
-  
+
 }
 
-.org-img{
+.arhn-org-img {
   transition: all .3s cubic-bezier(.6, .4, 0, 1);
 }
 
-.arhn-org-card:hover .org-img{
+.arhn-org-card:hover .arhn-org-img {
   /* background: var(--hover-bg); */
   opacity: 0.3;
 }
