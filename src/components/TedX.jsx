@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import HeaderImg from './components/HeaderImg/HeaderImg';
-import Speakers from './components/Speakers/Speakers';
-import Organisers from './components/Organisers/Organisers';
-import ImageCarousel from './components/ImageCarousel/ImageCarousel';
-import Navbar from './components/Navbar/Navbar';  
-import About from './components/About/About';
+import HeaderImg from './HeaderImg/HeaderImg';
+import Speakers from './Speakers/Speakers';
+import Organisers from './Organisers/Organisers';
+import ImageCarousel from './ImageCarousel/ImageCarousel';
+import Navbar from './Navbar/Navbar';  
+import About from './About/About';
 
 const TedX = () => {
   useEffect(() => {
