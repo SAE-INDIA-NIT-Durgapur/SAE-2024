@@ -37,10 +37,10 @@ const TedX = () => {
         <ImageCarousel />
       </div>
       <div className="max-w-screen mx-auto p-4">
-        {/* Underlined with red */}
+    
         <h1 className="text-5xl font-bold text-custom-red text-center underline-red">Speakers</h1>
         <Speakers />
-        {/* Underlined with red */}
+ 
         <h1 className="text-5xl font-bold text-custom-red text-center mb-6 underline-red">Organisers</h1>
         <Organisers />
       </div>
