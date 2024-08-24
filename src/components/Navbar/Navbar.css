@@ -1,0 +1,23 @@
+
+
+.ted-nav-link {
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .ted-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000; 
+    transition: width 0.3s ease;
+  }
+  
+  .ted-nav-link:hover::after {
+    width: 100%;
+  }
+  
