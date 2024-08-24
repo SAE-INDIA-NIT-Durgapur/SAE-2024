@@ -24,7 +24,7 @@ export const finalYear=[
     },
     
     {
-        "url":require("../Assets/FinalYearImg/Aniket Kamble.png"),
+        "url":"../Assets/FinalYearImg/Aniket Kamble.png",
         "name":"Aniket Kamble",
         "position":"Treasurer",
         "instaLink":"https://www.instagram.com/aniketkamble9192/",
@@ -165,7 +165,6 @@ export const finalYear=[
         "name":"Rakesh",
         "position":"Head ATH",
         "instaLink":"https://instagram.com/ra_kesh__g?igshid=ZDdkNTZiNTM=",
-
         "linkedinLink":"https://www.linkedin.com/in/gunta-rakesh-05204a259",
     },
     
